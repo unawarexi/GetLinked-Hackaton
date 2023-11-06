@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Unica+One:regular);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #150e28;
+  --color-bg-variant: #903aff;
+  --color-primary: linear-gradient(270deg, #903aff 0%, #fe34b9 100%);
+  --color-primary-variant: #d434fe;
+  --color-white: #fff;
+  --color-light: #d1ccdc;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+
+  --transition: all 400ms ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::webkit-scrollbar {
+  display: none;
+}
+
+body {
+  /* background-image: url(../src/assets/Purple-Lens-Flare-PNG.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+  background-color: var(--color-bg);
+  background-blend-mode: hard-light;
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+sub {
+  font-size: 16px;
+  gap: 2rem;
+}
+
+h2 {
+  font-family: " Montserrat";
+}
+
+.header__logo h2 {
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.header__logo h2 a {
+  color: #d434fe;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.sub__heading {
+  color: var(--color-primary-variant);
+  white-space: nowrap;
+  font-weight: 700;
+  font-family: "roboto";
+}
+
+button {
+  background: var(--color-primary);
+
+  border-radius: 0.5rem;
+  font-weight: bold;
+  color: var(--color-white);
+  justify-items: center;
+  align-items: center;
+  transition: easea all 100ms;
+  width: 10rem;
+  height: 3.5rem;
+  text-align: center;
+}
+
+.section4__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.section4__img {
+  margin-left: auto;
+}
+
+
+ .section__ul {
+   margin: auto;
+ }
+
+/*================= RESPONSIVENESS ================= */
+/* for tablets*/
+
+@media screen and (max-width: 1024px) {
+  /* .container {
+    width: var(--container-width-md);
+    margin: 0 auto;
+  } */
+}
+
+/* for mobile*/
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+    margin: 0 auto;
+  }
+
+  .header__nav {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .header__lists {
+    gap: 2rem;
+  }
+
+  button {
+    margin-top: 1rem;
+  }
+
+ 
+}

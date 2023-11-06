@@ -1,0 +1,142 @@
+.first__div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  position: relative;
+  margin-top: 2rem;
+}
+
+.article__div {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+ 
+}
+
+.list__div {
+  color: #fff;
+  width: 100%;
+}
+
+.list__div2 {
+  padding-top: 5rem;
+}
+
+.list__div h2 {
+  color: var(--color-primary-variant);
+  font-family: "roboto";
+  font-size: 32px;
+  padding-top: 4rem;
+  font-weight: 500;
+}
+
+.list__div p {
+  font-family: "roboto";
+  font-size: 18px;
+  padding-top: 1rem;
+}
+
+.line__number {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.line__div {
+  height: 137px;
+  width: 2px;
+  background: var(--color-primary-variant);
+}
+
+.number__div {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  font-family: "roboto";
+  padding-top: 0.5rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+/*================= RESPONSIVENESS ================= */
+/* for tablets*/
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+    margin: 0 auto;
+  }
+}
+
+/* for mobile*/
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+    margin: 0 auto;
+  }
+
+  .first__div {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 2rem;
+  }
+
+  .article__div {
+    display: flex;
+    gap: 0rem;
+    width: 100%;
+    
+  }
+
+  .list__div{
+    width:80%;
+    margin-left: 1rem;
+    margin-top:3rem;
+    margin-right: 0.5rem;
+  }
+
+  .list__div2 {
+  padding-top: 0rem;
+}
+  .list__div h2 {
+    font-size: 15px;
+    /* padding-top: -20rem; */
+    margin-top: -5rem;
+    
+  }
+
+  .list__div p {
+    font-size: 13px;
+    padding-top: 1rem;
+  }
+
+  .line__number {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* margin-top: -10rem; */
+    position: static;
+  }
+
+  .number__div {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    margin-left: -20px;
+    font-size: 25px;
+    
+  }
+}
