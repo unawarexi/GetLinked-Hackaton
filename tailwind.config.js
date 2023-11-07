@@ -21,6 +21,7 @@ export default {
         cardbg2: "rgba(144, 58, 255, 0.12)",
         cardbg3: "rgba(217, 217, 217, 0.03)",
         fade: "rgba(255, 255, 255, 0.75)",
+        footer:"#100B20"
         
       },
 

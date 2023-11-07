@@ -25,7 +25,7 @@ const NavItemsInfo = [
 
 const NavItems = ({ item }) => {
   return (
-    <li className=" header__lists relative group flex flex-col justify-center items-center text-white font-Montserrat z-9999999">
+    <li className=" header__lists relative group flex flex-col justify-center items-center text-white font-Montserrat z-[99]">
       <a href="/" className="px-4 py-2">
         {item.name}
       </a>
@@ -49,27 +49,30 @@ const Header = () => {
   return (
     <section>
       <div className="header__background absolute flex ">
-        <div>
-          <img src={images.lensflare} alt="logo" className=" headerr bg-blend-luminosity" />
+
+        
+
+         <div>
+          <img src={images.lensflare} alt="logo" className=" headerr bg-blend-luminosity w-full " />
         </div>
         <div>
-          <img src={images.lensflare2} alt="logo" className=" headerr bg-blend-luminosity" />
+          <img src={images.lensflare2} alt="logo" className=" headerr bg-blend-luminosity w-full " />
         </div>
-      </div>
+      </div> 
 
       {/*======================  this is for the background image ================================*/}
 
-      <header className="container mx-auto flex justify-between py-4 items-center  ">
+      <header className="container mx-auto flex justify-between lg:py-4 items-center ">
         <div className="header__logo  justify-center items-center ml-4 ">
-          <h2>
-            <span className="white-space: nowrap;">get</span>
+          <h2 className="text-lg">
+            <span className="white-space: nowrap ">get</span>
             <a href="/">Linked</a>
           </h2>
         </div>
 
         {/*======================  LOGO  ================================*/}
 
-        <div className=" z-50 lg:hidden m-8 bg-colorbg2 text-white relative p-4 rounded-md shadow-sm mb-7">
+        <div className=" z-[99] lg:hidden  m-8 bg-footer text-white relative p-2 rounded-md shadow-sm mb-4">
           {NavIsVisible ? (
             <AiOutlineClose onClick={navVisibleHandler} className="w-10 h-6 " />
           ) : (
@@ -82,8 +85,8 @@ const Header = () => {
         <div
           className={`${
             NavIsVisible ? "right-0 hidden" : "-right-full "
-          }header__nav transition-all duration-300 bg-colorprimary lg:bg-transparent z-49 flex flex-col  w-full lg:w-auto lg:justify-end lg:flex-row justify-center fixed top-0 bottom-0  lg:static gap-x-9
-           items-center mt-[7.5rem] lg:mt-0 z-99999`}
+          }header__nav transition-all duration-300 bg-footer lg:bg-transparent flex flex-col  w-[60%] lg:w-auto lg:justify-end lg:flex-row justify-center fixed top-0 bottom-0  lg:static gap-x-9
+           items-center lg:mt-0 z-[50]`}
         >
           <ul className="flex flex-col lg:flex-row right-0 gap-10 lg:gap-x-2 font-semibold p-4 z-50">
             {NavItemsInfo.map((item) => (
@@ -122,17 +125,17 @@ const Header = () => {
       <div className="lg:mt-48">
         <div className="   flex flex-col lg:flex-row items-center justify-center ">
           <div className="text-white text-center lg:text-start items-center justify-center  font-verdana  leading-normal  w-full lg:w-1/2 lg:ml-[10rem] gap-[50%] ">
-            <h2 className="text-[40px] lg:text-[80px] font-bold font-roboto">
+            <h2 className="text-[30px] lg:text-[80px] font-bold font-roboto">
               getlinked Tech
             </h2>
-            <h2 className="flex items-center justify-center lg:justify-start text-[40px] lg:text-[80px] font-bold font-roboto">
+            <h2 className="flex items-center justify-center lg:justify-start text-[30px] lg:text-[80px] font-bold font-roboto">
               Hackathon{" "}
               <span className="text-color_primary_variant whitespace-pre ">
                 {" "}
                 1.0{" "}
               </span>
-              <img src={images.chain} alt="icons" className=" w-20 h-20" />
-              <img src={images.blast} alt="icons" className=" w-20 h-20" />
+              <img src={images.chain} alt="icons" className=" w-15 h-10 lg:w-20 lg:h-20" />
+              <img src={images.blast} alt="icons" className=" w-15 h-15 lg:w-20 lg:h-20" />
             </h2>
             <p className="p-4 justify-center ">
               Participate in getlinked tech Hackathon 2023 stand a chance to win

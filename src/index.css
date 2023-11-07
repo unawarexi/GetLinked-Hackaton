@@ -104,10 +104,9 @@ button {
   margin-left: auto;
 }
 
-
- .section__ul {
-   margin: auto;
- }
+.section__ul {
+  margin: auto;
+}
 
 /*================= RESPONSIVENESS ================= */
 /* for tablets*/
@@ -136,9 +135,17 @@ button {
     gap: 2rem;
   }
 
+  .header__logo h2 {
+   
+    font-size: 20px;
+  }
+  .header__logo h2 a {
+    
+    font-size: 20px;
+    
+  }
+
   button {
     margin-top: 1rem;
   }
-
- 
 }
